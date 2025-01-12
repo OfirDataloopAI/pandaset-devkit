@@ -1,6 +1,13 @@
 # pandaset-devkit
 
-**Notice:** Modification added to support `.pkl` instead of `.pkl.gz`
+## Changes from the original repository
+
+1. Changed supported files extension from `.pkl.gz` to `.pkl`. 
+2. Added option to build wheel file with the following commands:
+   ```bash
+   pip install build
+   python -m build --wheel
+   ```
 
 ![Header Animation](assets/animations/semseg-photo-labels.gif)
 

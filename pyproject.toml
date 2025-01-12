@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandaset-devkit"
+dynamic = ["version", "dependencies"]
+description = "Welcome to the repository of the PandaSet Devkit."
+authors = [
+    {name = "Dataloop Team", email = "ofir.g@dataloop.ai"},
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/OfirDataloopAI/pandaset-devkit/tree/kaggle-wheel"
+
+[tool.setuptools]
+packages = {find = {where = ["python"]}}  # Updated for automatic discovery
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["python/requirements.txt"]}
+version = {attr = "pandaset.__version__.version"}

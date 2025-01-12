@@ -1,6 +1,8 @@
 # pandaset-devkit
 
-![Header Animation](../assets/animations/semseg-photo-labels.gif)
+**Notice:** Modification added to support `.pkl` instead of `.pkl.gz`
+
+![Header Animation](assets/animations/semseg-photo-labels.gif)
 
 
 ## Overview
@@ -316,4 +318,4 @@ API Reference: [SemanticSegmentation class](https://scaleapi.github.io/pandaset-
 
 
 
-![Header Animation](../assets/static/montage-semseg-projection.jpg)
+![Header Animation](assets/static/montage-semseg-projection.jpg)
